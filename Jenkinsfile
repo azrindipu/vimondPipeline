@@ -21,6 +21,14 @@ pipeline {
                 }
             }
         }
+        
+        stage ('Run unit test') {
+            steps {
+                dir('application-code') {
+                    sh 'mvn test'
+                }
+            }
+        }
 
         stage ('Compile code') {
             steps {
