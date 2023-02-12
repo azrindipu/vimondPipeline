@@ -9,7 +9,7 @@ pipeline {
     environment {
         ANSIBLE_GIT_URL='https://github.com/azrindipu/vimondAnsible.git'
         PROJECT_GIT_URL='https://github.com/azrindipu/VimondApp.git'
-        JAR_LOCATION='${WORKSPACE}/git-code/target'
+        JAR_LOCATION='${WORKSPACE}/application-code/target'
     }
 
     stages {
